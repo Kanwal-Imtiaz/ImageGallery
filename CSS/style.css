@@ -1,0 +1,58 @@
+
+body{
+	
+	margin: 0px;
+}
+.container{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+h1{
+	font-family: fantasy;
+	font-size: 3em;
+	border-bottom: 2px solid red; 
+	border-right: 2px solid red; 
+	width: 400px;
+	text-align: center;
+	box-shadow: 4px 4px 5px grey; /*shadow for the heading border */
+	margin:0px;
+	margin-top: 10px;
+	transition: all 1s;
+}
+
+img{
+	width: 450px;
+	height: 300px;
+	margin: 10px;
+	transition: all 1s;  /* on hover scale increase in 2sec */
+}
+
+img:hover{
+	transform: scale(1.1);
+}
+
+h1:hover{
+	transform: scale(1.1) rotate(-10deg) translateY(30%) ;
+    /*transform: translateY(50%) translateX(50%);
+}
+
+/* Transition makes the element smoothly and gradually change
+   from one state to another.
+   transition: [property] [duration] [timing-function] [delay];
+eg: transition all 1s;  //all properties
+	img:hover{
+	transform: scale(1.1);
+	}
+
+eg: transition: width 2s, height 4s;
+ 	div:hover {
+  	width: 300px;
+  	height: 300px;
+	}
+
+   Transforms move or change the appearance of an element.
+   With the CSS transform property you can rotate, move(translate), skew, and scale elements.
+   Transforms are triggered when an element changes states, such as on mouse-hover or mouse-click. 
+ */
